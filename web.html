@@ -5,7 +5,7 @@
 
         function f() {
             console.log(window.location.href)
-            window.Telegram.WebApp.sendData("hello bot, I am the web app")
+            window.Telegram.WebApp.sendData(window.location.href)
             window.Telegram.WebApp.answerWebAppQuery(window.location.href)
         }
     </script>
