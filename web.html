@@ -1,7 +1,16 @@
 <head>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        console.log(window.location.href)
-        window.Telegram.WebApp.sendData("hello bot, I am the web app")
+
+
+        function f() {
+            console.log(window.location.href)
+            window.Telegram.WebApp.sendData("hello bot, I am the web app")
+            window.Telegram.WebApp.answerWebAppQuery(window.location.href)
+        }
     </script>
 </head>
+
+<body>
+    <button onclick="f">Click Me</button>
+</body>
